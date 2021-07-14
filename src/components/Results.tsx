@@ -19,13 +19,14 @@ const Results = ({ results } : ResultsPropsType) => {
                 <div className="results-country">{country}</div>
             }
             {temperture && 
-                <div className="results-temp">{temperture} <span>℃</span></div>
+                <div className="results-temp">{temperture} <span>°C</span></div>
             }
             {conditionText && 
                 <div className="results-condition">
-                    <img src={icon} alt="icon" />
+                    <img src={icon} alt="icon"/>
                     <span>{conditionText}</span>
-                </div>}
+                </div>
+            }
         </div>
     );
 };
