@@ -18,11 +18,11 @@ function App() {
   const [loading, setLoading] = useState<boolean>(false);
   const [city, setCity] = useState<String>();
   const [results, setResults] = useState<ResultsStateType>({
-    country : " ",
-    cityName : " ",
-    temperture : " ",
-    conditionText : " ",
-    icon : " ",
+    country : "",
+    cityName : "",
+    temperture : "",
+    conditionText : "",
+    icon : "",
   })
   const getWeather = (e : React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
