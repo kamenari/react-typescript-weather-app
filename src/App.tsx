@@ -47,7 +47,6 @@ function App() {
       <div className="container">
         <Title />
         <Form setCity={setCity} getWeather={getWeather} city={city} />
-        <Results results={results} />
         {loading ? <Loading /> : <Results results={results} />}
       </div>
     </div>
